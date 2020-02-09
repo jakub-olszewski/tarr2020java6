@@ -52,7 +52,14 @@ public class App {
         // deklarujemy i inicjalizujemy 3 zmienne a,b,c
         // wynik metody zapisujemy do zmiennej wynik
         // wypisujemy wynik na konsoli
+        int wynik;
+        wynik = sumaLiczb(1,2,3);
     }
+
+    private static int sumaLiczb(int a, int b, int c) {
+        return a+b+c;
+    }
+
 
     // metoda zwraca odpowiedz co na obiad
     private static String coNaObiad(String kiedy) {
