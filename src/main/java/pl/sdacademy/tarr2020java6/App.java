@@ -49,7 +49,9 @@ public class App {
         System.out.println(coNaObiad("pojutrze"));// tutaj nie tworzymy zmiennej
 
         // Zadanie: Stwórz metodę liczącą sume 3 liczb całkowitych (int)
-
+        // deklarujemy i inicjalizujemy 3 zmienne a,b,c
+        // wynik metody zapisujemy do zmiennej wynik
+        // wypisujemy wynik na konsoli
     }
 
     // metoda zwraca odpowiedz co na obiad
