@@ -35,6 +35,10 @@ public class MetodyMain {
         // uzylismy konstruktora argumentowego z argumentem 'zielony'
         Mlotek zielonyMlotek = new Mlotek("zielony");
 
+        // zielonyMlotek.kolor = "różowy";//bez modyfikatora dostępu
+        // gdy kolor w mlotku jest private
+        // nie mamy dostępu
+
 
 
     }

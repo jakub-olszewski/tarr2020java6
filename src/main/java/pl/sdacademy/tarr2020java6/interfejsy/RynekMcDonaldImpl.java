@@ -7,7 +7,6 @@ package pl.sdacademy.tarr2020java6.interfejsy;
  **/
 public class RynekMcDonaldImpl implements McDonald {
 
-
     public void poproszeFrytki(double kwota) {
         System.out.println("Witamy w McDonald na rynku");
         System.out.println("Oto Twoje frytki");

@@ -7,7 +7,7 @@ package pl.sdacademy.tarr2020java6;
  **/
 public class Mlotek {
 
-    String kolor;// właściwość, pole
+    private String kolor;// właściwość, pole
 
     /**
      * Konstruktor domyślny (bezargumentowy) w klasie młotek
