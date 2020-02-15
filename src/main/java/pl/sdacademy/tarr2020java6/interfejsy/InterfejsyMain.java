@@ -18,6 +18,8 @@ public class InterfejsyMain {
 
         // Zadanie 1.
         // Poproś o frytki i mcflury w mcdonald na rynku
+        mcDonaldNaRynku.poproszeFrytki(30);
+        mcDonaldNaRynku.poproszeMcFlury(30);
 
         // Zadanie 2.
         // Stwórz implementację PlazaMcDonaldImpl
