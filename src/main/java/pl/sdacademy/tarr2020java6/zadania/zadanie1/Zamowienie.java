@@ -9,15 +9,24 @@ public class Zamowienie {
 
     int numer;
     float cena;
+    String nazwa;
 
-    public Zamowienie(int wprowadzonyNumer,float wprowadzonaCena){
+    public Zamowienie(int wprowadzonyNumer, float wprowadzonaCena, String wprowadzonaNazwa){
         numer = wprowadzonyNumer;
         cena = wprowadzonaCena;
+        nazwa = wprowadzonaNazwa;
     }
 
     public float pobierzCena(){
         return cena;
     }
 
-
+    @Override
+    public String toString() {
+        return "Zamowienie{" +
+                "numer=" + numer +
+                ", cena=" + cena +
+                ", nazwa='" + nazwa + '\'' +
+                '}';
+    }
 }

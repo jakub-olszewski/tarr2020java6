@@ -11,9 +11,21 @@ public class Zadanie1Main {
     public static void main(String[] args) {
 
         // tutaj tworzymy zamówienie i wypisujemy cene
-        Zamowienie zamowienie1 = new Zamowienie(1,12.99f);
-        // wypisanie ceny
-        System.out.println(zamowienie1.pobierzCena());
+        Zamowienie zamowienie1 = new Zamowienie(1,12.99f, "Frytki");
+        Zamowienie zamowienie2 = new Zamowienie(2,2.99f, "Cola");
+        Zamowienie zamowienie3 = new Zamowienie(3,1.99f, "Tofu");
+
+        float cena1 = zamowienie1.pobierzCena();
+        float cena2 = zamowienie2.pobierzCena();
+        float cena3 = zamowienie3.pobierzCena();
+
+        float suma = cena1 + cena2 + cena3;
+
+        System.out.println(zamowienie1);
+        System.out.println(zamowienie2);
+        System.out.println(zamowienie3);
+
+        System.out.println("suma="+suma);
 
     }
 }
