@@ -21,7 +21,8 @@ public class Zadanie1Main {
 
         float suma = cena1 + cena2 + cena3;
 
-        System.out.println(zamowienie1);
+        System.out.println(zamowienie1.toString());// metoda
+        // toString() jest domyślna nie trzeba jej pisać
         System.out.println(zamowienie2);
         System.out.println(zamowienie3);
 
