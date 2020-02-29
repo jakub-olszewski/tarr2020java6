@@ -24,6 +24,16 @@ public class TabliceMain {
         /*
         Zadanie2 tablica miast
          */
+        String tablicaMiast[] = {"Toruń","Poznań","Berlin"};
+
+        // poniższe linijki są tożsame - przypomnienie typy obiektowe
+        String napis = "napis";
+        napis.toLowerCase();
+        String napis2 = new String("napis");
+        napis2.toLowerCase();
+
+        "napis3".toLowerCase();
+
 
 
     }
