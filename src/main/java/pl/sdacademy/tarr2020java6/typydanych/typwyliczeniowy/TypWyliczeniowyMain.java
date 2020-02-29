@@ -25,7 +25,7 @@ public class TypWyliczeniowyMain {
         // jak mu ją dostarczyć ?
         // A4
         String formatA4 = "A4";
-        String formatB3 = "Be3";
+        String formatB3 = "Be3";// powinno być B3 w napisie łatwo o błąd
         // wpisanie w pole tekstowe
 
         // mamy do dyspozycji enum FormatPapieru
@@ -40,11 +40,17 @@ public class TypWyliczeniowyMain {
          * Przykład użycia oraz wypisanie na konsoli
          */
 
+        Status statusUzytkownika = Status.AKTYWNY;
+        System.out.println(statusUzytkownika);
+
         /**
          * Zadanie2
          * Uwtórz zmienna typu wyliczeniowego Plec
          * wartości: mezczyzna, kobieta
          * Przykład użycia oraz wypisanie na konsoli
          */
+        Plec plecKobiety = Plec.KOBIETA;
+//        plecKobiety = Plec.MEZCZYZNA;
+        System.out.println(plecKobiety);
     }
 }

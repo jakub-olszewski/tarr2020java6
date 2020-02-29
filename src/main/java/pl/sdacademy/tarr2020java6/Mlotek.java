@@ -33,4 +33,8 @@ public class Mlotek {
     public String pobierzKolor(){
         return kolor;
     }
+
+    public String toString(){
+        return "Mlotek "+kolor;
+    }
 }

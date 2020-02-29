@@ -1,5 +1,7 @@
 package pl.sdacademy.tarr2020java6.klasy;
 
+import pl.sdacademy.tarr2020java6.Mlotek;
+
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
  * @project : tarr2020java6
@@ -9,8 +11,16 @@ public class ZadanieMain {
 
     public static void main(String[] args) {
 
-        User uzytkownik = new User("Jan","Brzechwa",43);
-        System.out.println(uzytkownik);
+        User uzytkownik = new User("Jan",
+                "Brzechwa",
+                43);
+        System.out.println(uzytkownik.toString());
+        System.out.println(uzytkownik);// domyślnie wykorzystuje sie
+        // metodę toString()
+        System.out.println(new User("a",
+                "b",
+                0));
+        System.out.println(new Mlotek());
     }
 
 }
