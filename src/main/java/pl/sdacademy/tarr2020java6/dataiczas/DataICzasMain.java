@@ -1,6 +1,9 @@
 package pl.sdacademy.tarr2020java6.dataiczas;
 
+import javax.swing.text.DateFormatter;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.zip.DataFormatException;
 
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
@@ -21,6 +24,14 @@ public class DataICzasMain {
         System.out.println(napisDataICzas);
 
         // konwersja napisu na datę
+        String dataJakoNapis = "2020-02-29 11:55";
+        String formatDaty = "yyyy-MM-dd HH:mm";
+
+        // tworzymy formater potrzebny do parsowania daty
+        // musimy wiedzieć w jakim formacie jest data którą formatujemy
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(formatDaty);
+        // powstała data poniżej w wyniku parsowania dataJakoNapis
+        LocalDateTime data = LocalDateTime.parse(dataJakoNapis,formatter);
 
 
         // konwersja daty na napis
