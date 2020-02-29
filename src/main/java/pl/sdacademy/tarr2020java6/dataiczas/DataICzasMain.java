@@ -24,7 +24,7 @@ public class DataICzasMain {
         System.out.println(napisDataICzas);
 
         // konwersja napisu na datę
-        String dataJakoNapis = "2020-02-29 11:55";
+        String dataJakoNapis = "2020-02-29 15:55";
         String formatDaty = "yyyy-MM-dd HH:mm";
 
         // tworzymy formater potrzebny do parsowania daty
@@ -34,7 +34,22 @@ public class DataICzasMain {
         LocalDateTime data = LocalDateTime.parse(dataJakoNapis,formatter);
 
 
+        LocalDateTime dataZkonwersji = konwersjaNapisNaDate(dataJakoNapis);
+        // wypisz date
+        // wypisana data posiada własny format z literką 'T'
+        System.out.println("data:  "+dataZkonwersji);
+
         // konwersja daty na napis
+        LocalDateTime dataTeraz = LocalDateTime.now();
+        String obecnaData = dataTeraz.format(formatter);
+        System.out.println("obecna data: "+obecnaData);
+
+        System.out.println("Czy teraz jest po "+dataZkonwersji);
+        if(dataTeraz.isAfter(dataZkonwersji)){
+            System.out.println("tak");
+        }else{
+            System.out.println("nie");
+        }
     }
 
     /**
@@ -44,11 +59,15 @@ public class DataICzasMain {
 
     public static LocalDateTime konwersjaNapisNaDate(String dataJakoNapis){
         //implementacja
-        return null;
+        String formatDaty = "yyyy-MM-dd HH:mm";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(formatDaty);
+        return LocalDateTime.parse(dataJakoNapis,formatter);
     }
 
-    public static String konwersjaDataNaNapis(LocalDateTime data){
+    public static String konwersjaDataNaNapis(LocalDateTime wprowadzonaData){
         //implementacja
-        return null;
+        String formatDaty = "yyyy-MM-dd HH:mm";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(formatDaty);
+        return wprowadzonaData.format(formatter);
     }
 }
