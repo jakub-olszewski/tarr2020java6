@@ -12,6 +12,7 @@ public class SwitchMain {
     public static void main(String[] args) {
 
         // status uzytkownika
+        // WIELKIMI literami wartość enum
         Status statusUzytkownika = Status.NIE_AKTYWNY;
 
         switch (statusUzytkownika) {
