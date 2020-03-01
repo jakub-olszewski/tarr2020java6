@@ -1,4 +1,4 @@
-package pl.sdacademy.tarr2020java6;
+package pl.sdacademy.tarr2020java6.scanner;
 
 import java.util.Scanner;
 
@@ -11,6 +11,7 @@ public class ScannerMain {
 
     public static void main(String[] args) {
         {
+            // \n -> enter
             String napis = "Toruń moje miasto!\nRok 2020";
             Scanner skaner = new Scanner(napis);// tworzymy skanner
             // nextLine() pobieramy linię
@@ -26,6 +27,7 @@ public class ScannerMain {
             System.out.println("==============");
             // z użyciem pętli
 
+            // powyższe wczytywanie z użyciem pętli line
             while (skaner.hasNext()) {
                 System.out.println(skaner.nextLine());
             }
