@@ -10,18 +10,24 @@ import pl.sdacademy.tarr2020java6.abstrakcja.interfejsy.Informacje;
  **/
 public class Kolo extends Figura {
 
+    public Kolo(float r) {
+        this.r = r;
+    }
+
+    private float r;
+
     public Kolo(){
         nazwa = "Koło";
     }
 
     @Override
     public float obliczPole() {
-        return 0;
+        return 3.14f*r*r;
     }
 
     @Override
     public float obliczObwod() {
-        return 0;
+        return 2*r*3.14f;
     }
 
     // metody poniżej są w Figura

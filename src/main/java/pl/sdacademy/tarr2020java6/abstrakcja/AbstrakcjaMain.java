@@ -2,6 +2,7 @@ package pl.sdacademy.tarr2020java6.abstrakcja;
 
 import pl.sdacademy.tarr2020java6.abstrakcja.figury.Kolo;
 import pl.sdacademy.tarr2020java6.abstrakcja.figury.Kwadrat;
+import pl.sdacademy.tarr2020java6.abstrakcja.figury.Prostokat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,13 +37,15 @@ public class AbstrakcjaMain {
     public static void main(String[] args) {
 
         Kwadrat kwadrat = new Kwadrat(5);
-        Kolo kolo = new Kolo();
+        Kolo kolo = new Kolo(5);
+        Prostokat prostokat = new Prostokat(2,3);
 
         // lista figur
         List<Figura> listaFigur = new ArrayList();
         // dodanie kwadratu do listy
         listaFigur.add(kwadrat);
         listaFigur.add(kolo);
+        listaFigur.add(prostokat);
 
         // wypisanie informacji w pętli
         for(Figura element : listaFigur){
