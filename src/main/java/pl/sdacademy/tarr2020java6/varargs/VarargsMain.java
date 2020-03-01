@@ -24,14 +24,21 @@ public class VarargsMain {
         }
         {
             int wynik = suma(12,4,456,45,23,6,3,4,234,7,65,34,34,34,53);
+            System.out.println("wynik="+wynik);// = 135
         }
         {
             int wynik = suma(44,45,46);
             System.out.println("wynik="+wynik);// = 135
         }
+        {
+            int wynik = suma();
+            System.out.println("wynik="+wynik);// 0
+        }
     }
 
-    private static int suma(int... liczby){// tablica liczby
+    // tablica int[]
+    // varargs int...
+    static int suma(int... liczby){// tablica liczby
         // implementacja
         // sposób działania
         int suma = 0;
