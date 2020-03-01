@@ -1,5 +1,11 @@
 package pl.sdacademy.tarr2020java6.abstrakcja;
 
+import pl.sdacademy.tarr2020java6.abstrakcja.figury.Kolo;
+import pl.sdacademy.tarr2020java6.abstrakcja.figury.Kwadrat;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
  * @project : tarr2020java6
@@ -27,4 +33,20 @@ public class AbstrakcjaMain {
         Zadanie: Stwórz listę figur ,wypisz informacje
         zsumuj pola;
          */
+    public static void main(String[] args) {
+
+        Kwadrat kwadrat = new Kwadrat(5);
+        Kolo kolo = new Kolo();
+
+        // lista figur
+        List<Figura> listaFigur = new ArrayList();
+        // dodanie kwadratu do listy
+        listaFigur.add(kwadrat);
+        listaFigur.add(kolo);
+
+        // wypisanie informacji w pętli
+        for(Figura element : listaFigur){
+            element.wypiszInformacje();
+        }
+    }
 }

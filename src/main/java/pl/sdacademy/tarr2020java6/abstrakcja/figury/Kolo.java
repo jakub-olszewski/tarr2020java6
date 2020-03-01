@@ -8,19 +8,30 @@ import pl.sdacademy.tarr2020java6.abstrakcja.interfejsy.Informacje;
  * @project : tarr2020java6
  * @since : 01.03.2020
  **/
-public class Kolo extends Figura implements Informacje {
+public class Kolo extends Figura {
 
     public Kolo(){
         nazwa = "Koło";
     }
 
     @Override
-    public void wypiszInformacje() {
-        wypiszNazwe();
+    public float obliczPole() {
+        return 0;
     }
 
     @Override
-    public void wypiszNazwe() {
-        System.out.println(nazwa);
+    public float obliczObwod() {
+        return 0;
     }
+
+    // metody poniżej są w Figura
+//    @Override
+//    public void wypiszInformacje() {
+//        wypiszNazwe();
+//    }
+//
+//    @Override
+//    public void wypiszNazwe() {
+//        System.out.println(nazwa);
+//    }
 }

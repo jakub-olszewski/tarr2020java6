@@ -15,7 +15,10 @@ public abstract class Figura implements Informacje, Obliczenia{
 
     @Override
     public void wypiszInformacje() {
+        System.out.println("------------------");
         wypiszNazwe();
+        System.out.println("pole="+obliczPole());
+        System.out.println("obwód="+obliczPole());
     }
 
     @Override
@@ -24,12 +27,8 @@ public abstract class Figura implements Informacje, Obliczenia{
     }
 
     @Override
-    public float obliczPole() {
-        return 0;
-    }
+    public abstract float obliczPole();
 
     @Override
-    public float obliczObwod() {
-        return 0;
-    }
+    public abstract float obliczObwod();
 }

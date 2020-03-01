@@ -8,19 +8,26 @@ import pl.sdacademy.tarr2020java6.abstrakcja.interfejsy.Informacje;
  * @project : tarr2020java6
  * @since : 01.03.2020
  **/
-public class Kwadrat extends Figura implements Informacje {
+public class Kwadrat extends Figura {
 
-    public Kwadrat(){
+    private int a;
+
+    private Kwadrat(){
         nazwa = "Kwadrat";
     }
 
-    @Override
-    public void wypiszInformacje() {
-
+    public Kwadrat(int a){
+        this();// wywolanie konstruktora domyślnego
+        this.a = a;
     }
 
     @Override
-    public void wypiszNazwe() {
+    public float obliczPole() {
+        return a*a;
+    }
 
+    @Override
+    public float obliczObwod() {
+        return 4*a;
     }
 }
