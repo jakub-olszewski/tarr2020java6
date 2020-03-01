@@ -26,15 +26,20 @@ public class ZadanieMain {
         String wczytanieImie = skaner.nextLine();
 
         // wczytanie nazwiska
+        System.out.println("Podaj nazwisko:");
+        String wczytanieNazwisko = skaner.nextLine();
 
         // wczytanie wieku
         // nextInt()
+        System.out.println("Podaj wiek:");
+        int wczytanieWiek = skaner.nextInt();
+
 
         // wyświetlenie utworzono użytkownika imię i nazwisko
         // ustawiamy wczytane wartości do zmiennych
         String imie = wczytanieImie;
-        String nazwisko = "nazwisko";
-        int wiek = 0;
+        String nazwisko = wczytanieNazwisko;
+        int wiek = wczytanieWiek;
         // utworzymy użytkownika
         System.out.println("======================================");
         User uzytkownik = new User(imie,nazwisko,wiek);
