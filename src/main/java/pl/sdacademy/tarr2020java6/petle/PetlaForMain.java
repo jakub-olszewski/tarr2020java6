@@ -20,5 +20,17 @@ public class PetlaForMain {
          * Zadanie: Wypisz w pętli for elementy tablic
          */
 
+        // pętla for po tablicy liczb
+        for(int liczba : tablicaLiczb){// 23,34,26,33,32
+            System.out.println(liczba);
+        }
+
+        // i = iteracja
+        // ( warunek początkowy ; warunek zakończenia ; krok )
+        // krok i++ to znaczy że kto jest o jeden
+        for(int i = 0; i<3;i++){
+            System.out.println(tablicaLiczb[i]);
+//            int wynik = 3 * i;
+        }
     }
 }
