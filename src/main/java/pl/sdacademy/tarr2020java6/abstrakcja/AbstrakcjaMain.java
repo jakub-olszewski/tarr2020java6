@@ -15,7 +15,13 @@ public class AbstrakcjaMain {
         // Trojkat równoboczny
         // prostokąt
         // koło
-        // wszystkie figury tworzymy w pakiecie figury
+        // wszystkie figury tworzymy w pakiecie abstrakcja/figury
+
+        // klasa abstrakcyjna Figura w pakiecie abstrakcja
+
+        // interfejs Obliczenia w pakiecie abstrakcja/interfejsy
+
+        // interfejs Informacje w pakiecie abstrakcja/interfejsy
 
         /*
         Zadanie: Stwórz listę figur ,wypisz informacje
