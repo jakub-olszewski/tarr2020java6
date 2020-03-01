@@ -1,5 +1,7 @@
 package pl.sdacademy.tarr2020java6.scanner;
 
+import pl.sdacademy.tarr2020java6.klasy.User;
+
 import java.util.Scanner;
 
 /**
@@ -14,18 +16,31 @@ public class ZadanieMain {
         // tworzymy skanner in -> wejście
 
         System.out.println("======================================");
-        // z użyciem pętli
         System.out.println("==== System Tworzenia Użytkownika ====");
         System.out.println("======================================");
 
         // powyższe wczytywanie z użyciem pętli line
 
         // wczytywanie imie
-        String wczytanaLinia = skaner.nextLine();
-        System.out.println(wczytanaLinia);
+        System.out.println("Podaj imię:");
+        String wczytanieImie = skaner.nextLine();
 
         // wczytanie nazwiska
 
+        // wczytanie wieku
+        // nextInt()
+
+        // wyświetlenie utworzono użytkownika imię i nazwisko
+        // ustawiamy wczytane wartości do zmiennych
+        String imie = wczytanieImie;
+        String nazwisko = "nazwisko";
+        int wiek = 0;
+        // utworzymy użytkownika
+        System.out.println("======================================");
+        User uzytkownik = new User(imie,nazwisko,wiek);
+        System.out.println("INFO: Utworzono użytkownika!");
+        // wypiszemy z użyciem toString()
+        System.out.println(">>> "+uzytkownik);
 
     }
 }
