@@ -1,5 +1,6 @@
-package pl.sdacademy.tarr2020java6.java.zaawansowana.oop;
+package pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1;
 
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.birds.Eagle;
 import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Squirrel;
 
 /**
@@ -66,7 +67,8 @@ public class Zadanie1Main {
          *
          * 'imieWiewiorki' została zjedzona przez 'imieOrła'
          */
-
+        Eagle baldEagle = new Eagle("Bald Eagle");
+        baldEagle.eat(pinky);
 
         /**
          * Zadanie3:Utworz obiekt Lion i Elephant.
