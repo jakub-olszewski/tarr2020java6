@@ -1,5 +1,7 @@
 package pl.sdacademy.tarr2020java6.java.zaawansowana.oop;
 
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Squirrel;
+
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
  * @project : tarr2019java4-tdd-project
@@ -51,8 +53,10 @@ public class Zadanie1Main {
          * Uwaga. Konstruktor powinien być utworzony w klasie Animal
          * i będzie dostępny we wszystkich klasa które rozszerzają
          * klase Animal
+         *
+         * Dostajemy infomacje informacje o narodzinach
          */
-
+        Squirrel pinky = new Squirrel("Pinky");
 
         /**
          * Zadanie2: Utworz obiekt Eagle. Wykonaj metodę eat()
