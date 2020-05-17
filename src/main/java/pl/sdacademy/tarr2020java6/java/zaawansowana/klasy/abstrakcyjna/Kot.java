@@ -17,5 +17,10 @@ public abstract class Kot extends Animal implements DzwiekiKota {
         super(name);
     }
 
+    @Override
+    public String toString() {
+        return "Kot{"+getName()+"}";
+    }
+
     public abstract void drapanie();
 }
