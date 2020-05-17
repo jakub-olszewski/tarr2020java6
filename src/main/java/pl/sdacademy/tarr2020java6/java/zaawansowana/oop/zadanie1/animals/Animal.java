@@ -18,7 +18,7 @@ public class Animal {
     public Animal(String name){
         this.name = name;
         this.escape=false;
-        System.out.printf("\n%s urodził się",getName());
+        System.out.printf("\n%s urodził się\n",getName());
     }
 
     public boolean isEscape()
