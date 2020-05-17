@@ -33,7 +33,7 @@ public class Main {
      *
      * Main - przykład użycia
      *
-     *      Dictionary dictionary = new Dictionary();
+     *      Dictionary dictionary = new DictionaryImpl();
      *      String word = dictionary.search("Window");
      *      System.out.println(word);
      *      // w konsoli
