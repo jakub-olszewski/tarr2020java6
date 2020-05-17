@@ -8,21 +8,35 @@ package pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie2;
 public class Main {
 
     /**
-     * Uwaga. Zadanie dodatkowe dla tych co zrobili poprzednie
      *
      * Zadanie2
      *
      * Program słownik. Dane wejsciowe w postaci Map (Collection) klucz/wartość.
-     * Słownik ma możliwość wyszukiwania słowa.
+     * Słownik ma możliwość wyszukiwania słowa. (Użycie for lub get())
      * Wyszukiwanie poprzez przeglądanie w pętli mapy słów
      *
      * Klasa WordData ma być klasą wewnętrzną klasy Dictionary
      * w klasie Main przykład użycia
      *
      * Klasy:
-     * Dictionary - słownik, zawiera WordData
+     * Dictionary - słownik, zawiera WordData implementuje Search
      * WordData - dane do słownika extends Map
+     * Search - interfejs
+     *
+     *      Metody:
+     *          search(String word) - szuka dokladnie takie slowo
+     *
+     *      dodatkowe:
+     *          searchStarts(String startWord) - szuka slowo rozpoczynajace sie
+     *          searchContain(String partWord) - szuka części słowa
+     *
      * Main - przykład użycia
+     *
+     *      Dictionary dictionary = new Dictionary();
+     *      String word = dictionary.search("Window");
+     *      System.out.println(word);
+     *      // w konsoli
+     *      // Okno
      *
      * Dodatkowo:
      * 1)
@@ -34,6 +48,6 @@ public class Main {
      * ---
      * 1a)
      * 2)
-     * pobieranie z klawiatury słowa (Scanner)
+     * pobieranie z klawiatury słowa (Scanner - java-podstawy)
      */
 }
