@@ -19,7 +19,8 @@ public class Main {
      * w klasie Main przykład użycia
      *
      * Klasy:
-     * Dictionary - słownik, zawiera WordData implementuje Search
+     * DictionaryImpl - implementacja interfejsu
+     * Dictionary - interfejs słownik, zawiera WordData implementuje Search
      * WordData - dane do słownika extends Map
      * Search - interfejs
      *
