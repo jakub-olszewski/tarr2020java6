@@ -28,9 +28,11 @@ class Kot implements Dzwiek {
 interface Dzwiek{
     public void mruczenie();
 }
+// po za klasą
 
 public class AllInOneMain {
 
+    // wnętrze klasy
     public static void main(String[] args) {
 
         Kot filemon = new Kot("Filemon");
