@@ -3,6 +3,7 @@ package pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja;
 import pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja.figury.Kolo;
 import pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja.figury.Kwadrat;
 import pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja.figury.Prostokat;
+import pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja.figury.Trojkat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,5 +52,9 @@ public class AbstrakcjaMain {
         for(Figura element : listaFigur){
             element.wypiszInformacje();
         }
+
+        Trojkat trojkat = new Trojkat(3,4,5);
+        trojkat.wypiszInformacje();
+
     }
 }
