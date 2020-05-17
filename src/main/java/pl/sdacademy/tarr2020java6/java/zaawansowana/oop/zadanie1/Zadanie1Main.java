@@ -1,6 +1,8 @@
 package pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1;
 
 import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.birds.Eagle;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Elephant;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Lion;
 import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Squirrel;
 
 /**
@@ -75,6 +77,10 @@ public class Zadanie1Main {
          * Elephant ucieka.
          * Lion chce to zjeść.
          */
+        Lion kingLion = new Lion("King Lion");
+        Elephant dumboElephant = new Elephant("Dumbo");
+        dumboElephant.runAwayFrom(kingLion);
+        kingLion.eat(dumboElephant);
 
 
         /**

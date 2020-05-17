@@ -17,11 +17,6 @@ public class Elephant extends Mammal implements Vegetarian, Prey {
     }
 
     @Override
-    public void runAwayFrom(Animal animal) {
-
-    }
-
-    @Override
     public void eat(Plant plant) {
 
     }
