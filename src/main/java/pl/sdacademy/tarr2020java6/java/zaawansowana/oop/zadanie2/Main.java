@@ -7,6 +7,11 @@ package pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie2;
  **/
 public class Main {
 
+    public static void main(String[] args) {
+        Dictionary dictionary = new DictionaryImpl();
+        String word = dictionary.search("Window");
+        System.out.println(word);
+    }
     /**
      *
      * Zadanie2
