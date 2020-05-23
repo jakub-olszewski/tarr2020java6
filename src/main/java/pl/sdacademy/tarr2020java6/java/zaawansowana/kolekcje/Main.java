@@ -33,6 +33,15 @@ public class Main {
          *
          * 3.Czym się różni lista od zbioru ?
          *
+         * Przykłady:
+         * - struktura Ksiązek
+         * - struktura Stacji paliw
+         * - struktura słownika tłumaczeń
+         * - struktura bazy ZUS ubezpieczonych
+         * - struktura bazy PLUS telefonii
+         * - struktura ogłoszeń na allegro
+         * - struktura kody pocztowe
+         * - struktura restauracji menu
          */
 
         // lista
