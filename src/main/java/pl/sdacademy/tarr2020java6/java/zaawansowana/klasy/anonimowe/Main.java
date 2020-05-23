@@ -3,6 +3,9 @@ package pl.sdacademy.tarr2020java6.java.zaawansowana.klasy.anonimowe;
 import pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja.Figura;
 import pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja.figury.Kolo;
 import pl.sdacademy.tarr2020java6.java.podstawy.abstrakcja.figury.Kwadrat;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.Animal;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Mammal;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Squirrel;
 
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
@@ -54,6 +57,23 @@ public class Main {
          * Zadanie. Stwórz anonimową klasę zwierzaka,
          * którego nie masz w klasie (pakiecie)
          */
+        Animal kot = new Animal("Kot"){
+
+            public void runAwayFrom(Animal animal)
+            {
+                System.out.printf("\n%s miauczy przed %s\n",this.getName(),animal.getName());
+                this.setEscape(true);
+            }
+
+        };
+
+        kot.runAwayFrom(new Animal("Pies"));
+
+        // wiewiorka to nie jest klasa anonimowa
+        Squirrel wiewiorka = new Squirrel("Wiewiórka");
+        System.out.println("=================");
+        System.out.println("Wiewiórka "+wiewiorka.getClass().getName());
+        System.out.println("Kot "+kot.getClass().getName());
 
     }
 }
