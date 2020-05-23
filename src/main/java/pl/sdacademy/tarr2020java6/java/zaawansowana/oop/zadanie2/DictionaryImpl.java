@@ -9,21 +9,28 @@ import java.util.HashMap;
  **/
 public class DictionaryImpl implements Dictionary {
 
+    private final WordData wordData;
+
+    /**
+     * Klasa wewnętrzna zawierająca dane do słownika
+     */
     class WordData extends HashMap<String,String> {
 
         // konstruktor pod klasy
         public WordData(){
             super();// dlaczego tutaj jest super ?
+            put("window","okno");
+            put("english","angielski");
         }
     }
 
     @Override
     public String search(String word) {
-        return "";
+        return wordData.get(word.toLowerCase());
     }
 
     // konstruktor nad klasy
     public DictionaryImpl(){
-        WordData wordData = new WordData();
+        wordData = new WordData();
     }
 }

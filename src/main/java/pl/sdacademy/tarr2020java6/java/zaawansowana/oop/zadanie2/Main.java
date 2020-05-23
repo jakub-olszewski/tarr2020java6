@@ -11,6 +11,9 @@ public class Main {
         Dictionary dictionary = new DictionaryImpl();
         String word = dictionary.search("Window");
         System.out.println(word);
+
+        word = dictionary.search("english");
+        System.out.println(word);
     }
     /**
      *
