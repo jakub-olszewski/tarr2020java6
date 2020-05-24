@@ -50,6 +50,9 @@ public class Main {
      * Dodatkowo:
      * 1)
      * import słów z pliku csv
+     * linia po linii i wstawić klucz i wartość do WordData czyli mapy używając
+     * metody put(klucz,wartosc)
+     *
      * Przykład:
      * ---
      * Mammal,Ssak;
