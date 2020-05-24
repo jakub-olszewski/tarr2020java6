@@ -1,5 +1,9 @@
 package pl.sdacademy.tarr2020java6.java.zaawansowana.typy.generyczne.zadanie;
 
+import pl.sdacademy.tarr2020java6.java.zaawansowana.narzedzia.Wypisz;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.plants.Grass;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.typy.generyczne.Frytki;
+
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
  * @project : tarr2019java4-tdd-project
@@ -10,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         /**
          * Zadanie.
-         * 
+         *
          * Main:
          * Ogrodnik, który sadzi rośliny w doniczki i podlewa
          *
@@ -23,5 +27,14 @@ public class Main {
          * - Doniczka - klasa generyczna extends Plant
          *
          */
+        Monster roslinaMonster = new Monster();
+        Ogrodnik januszOgrodnik = new Ogrodnik();
+        Doniczka<Monster> doniczka = new Doniczka<>(Monster.class);
+        Doniczka<Grass> doniczkaNaTrawe = new Doniczka<>(Grass.class);
+        //Doniczka<Frytki> doniczkaZFrytkami;// nie działa bo extends Plant
+        Wypisz.tytul("Ogrodnik sadzi monstera");
+        januszOgrodnik.sadzenie(roslinaMonster,doniczka);
+        Wypisz.tytul("Ogrodnik sadzi trawe");
+        januszOgrodnik.sadzenie(new Grass("trawa"),doniczka);
     }
 }
