@@ -1,8 +1,6 @@
 package pl.sdacademy.tarr2020java6.java.zaawansowana.typy.generyczne.zadanie;
 
 import pl.sdacademy.tarr2020java6.java.zaawansowana.narzedzia.Wypisz;
-import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.plants.Grass;
-import pl.sdacademy.tarr2020java6.java.zaawansowana.typy.generyczne.Frytki;
 
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
