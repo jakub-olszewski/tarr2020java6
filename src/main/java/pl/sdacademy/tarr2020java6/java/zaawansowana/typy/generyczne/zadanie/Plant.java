@@ -6,6 +6,7 @@ package pl.sdacademy.tarr2020java6.java.zaawansowana.typy.generyczne.zadanie;
  * @since : 24.05.2020
  **/
 public class Plant {
+
     public String getName() {
         return name;
     }
@@ -14,9 +15,9 @@ public class Plant {
         this.name = name;
     }
 
-    private String name;
-
     public Plant(String name) {
         this.name = name;
     }
+
+    String name;
 }

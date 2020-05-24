@@ -15,6 +15,6 @@ public class InterfejsGenerycznyMain {
         Lowca lowca = new Lowca();
         lowca.rozpoczecie();
         lowca.zlapanieDoKlatki(lew);
-        lowca.zlapanieDoKlatki(frytki);
+        //lowca.zlapanieDoKlatki(frytki);
     }
 }
