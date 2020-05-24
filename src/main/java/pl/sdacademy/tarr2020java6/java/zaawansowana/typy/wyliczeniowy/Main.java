@@ -42,5 +42,8 @@ public class Main {
          * - pobierzWyskosc
          * - pobierzSzerokosc
          */
+        FormatPapieru papierA4 = FormatPapieru.A4;
+        System.out.println(papierA4);
+
     }
 }
