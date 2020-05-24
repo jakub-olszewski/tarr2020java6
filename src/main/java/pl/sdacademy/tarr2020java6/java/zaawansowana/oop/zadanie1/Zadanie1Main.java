@@ -1,9 +1,12 @@
 package pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1;
 
 import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.birds.Eagle;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Deer;
 import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Elephant;
 import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Lion;
 import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.animals.mammals.Squirrel;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.plants.Grass;
+import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.snakes.Boa;
 
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
@@ -89,14 +92,21 @@ public class Zadanie1Main {
          * Lew uciekł z ZOO i chce zjeść jelonka.
          *
          */
+        Deer bambiDeer = new Deer ("Bambi");
+        Grass grass = new Grass("Trawa");
+        bambiDeer.eat(grass);
 
+        bambiDeer.runAwayFrom(kingLion);
+        kingLion.eat(bambiDeer);
 
         /**
          * Zadanie5: Boa 'Kaa' próbuje udusić jelonka. Udaje mu się. :(
          * Potem próbuje udusić słonia i ma problem.
          *
          */
-
+        Boa kaaBoa = new Boa("Kaa");
+        kaaBoa.strangle(bambiDeer);
+        kaaBoa.strangle(dumboElephant);
 
     }
 }

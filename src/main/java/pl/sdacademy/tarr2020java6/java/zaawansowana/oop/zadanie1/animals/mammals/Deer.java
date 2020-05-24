@@ -23,6 +23,7 @@ public class Deer extends Mammal implements Vegetarian, Prey {
 
     @Override
     public void eat(Plant plant) {
-
+        System.out.printf("\n%s je %s",this.getName(),plant.getName());
+        // kod opisujacy wykonanie metody przez Deer
     }
 }
