@@ -9,7 +9,7 @@ import pl.sdacademy.tarr2020java6.java.zaawansowana.narzedzia.Wypisz;
  **/
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         {
             int liczbaGodzin = 2;
             Wypisz.tytul("Poprawna liczba godzin");
@@ -21,16 +21,16 @@ public class Main {
             Wypisz.tytul("Nie poprawna liczba godzin");
             int liczbaSekund = 0;
             try {// próbowanie i szukanie wyjątku
-            liczbaSekund = pobierzLiczbeSekund(liczbaGodzin);
-            System.out.println(liczbaSekund);
-            // fault f
-            // exception e
-        }catch(Exception e){// catch - złapanie wyjątku
-            // ten kod wykonywany jest gdy nastąpił exception
-            //e.printStackTrace(); // linie z opisem błędu
-            System.err.println(e.getMessage());
-            // powyżej poprawna obsługa błędu
-        }
+                liczbaSekund = pobierzLiczbeSekund(liczbaGodzin);
+                System.out.println(liczbaSekund);
+                // fault f
+                // exception e
+            } catch (Exception e) {// catch - złapanie wyjątku
+                // ten kod wykonywany jest gdy nastąpił exception
+                //e.printStackTrace(); // linie z opisem błędu
+                System.err.println(e.getMessage());
+                // powyżej poprawna obsługa błędu
+            }
         }
         {
             Wypisz.tytul("Zakończenie programu !!!");
@@ -40,15 +40,16 @@ public class Main {
 
     /**
      * Metoda wylicza liczbe sekund i zrzuca wyjątek w przypadku nie poprawnego argumentu
+     *
      * @param liczbaGodzin - liczba godzin
      * @return liczba sekund
      * @throws IllegalArgumentException nie prawidlowy argument < 0
      */
-    private static int pobierzLiczbeSekund(int liczbaGodzin)   {
-        if(liczbaGodzin < 0){
+    private static int pobierzLiczbeSekund(int liczbaGodzin) {
+        if (liczbaGodzin < 0) {
             // throw - zrzucanie wyjątku
-            throw new IllegalArgumentException("wprowadzona godzina '"+liczbaGodzin+"' musi być > 0 !");
+            throw new IllegalArgumentException("wprowadzona godzina '" + liczbaGodzin + "' musi być > 0 !");
         }
-        return liczbaGodzin*60*60;
+        return liczbaGodzin * 60 * 60;
     }
 }

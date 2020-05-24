@@ -8,4 +8,7 @@ import pl.sdacademy.tarr2020java6.java.zaawansowana.oop.zadanie1.plants.Plant;
  * @since : 17.05.2020
  **/
 public class Drzewo extends Plant {
+    public Drzewo(String name) {
+        super(name);
+    }
 }

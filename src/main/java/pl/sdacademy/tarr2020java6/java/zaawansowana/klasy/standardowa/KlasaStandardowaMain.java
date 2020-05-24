@@ -11,7 +11,7 @@ public class KlasaStandardowaMain {
 
     public static void main(String[] args) {
         Pies szarik = new Pies("Szarik");
-        Drzewo kij = new Drzewo();
+        Drzewo kij = new Drzewo("Drzewo");
         szarik.aport(kij);
     }
 }
