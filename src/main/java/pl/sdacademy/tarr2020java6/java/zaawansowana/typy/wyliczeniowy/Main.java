@@ -27,6 +27,14 @@ public class Main {
         }
 
         /**
+         * Przykład.
+         * Koszulki i wielkosci rozmiaru
+         */
+        TshirtSize rozmiarKoszulkiM = TshirtSize.M;
+        int szerokoscM = rozmiarKoszulkiM.getWidth();
+        System.out.println(rozmiarKoszulkiM);
+
+        /**
          * Zadanie.
          * Stworzeniu enum FormatPapieru
          * A1, A2, A3, A4
