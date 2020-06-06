@@ -1,5 +1,8 @@
 package pl.sdacademy.tarr2020java6.java.zaawansowana.wyjatki;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
  * @project : tarr2019java4-tdd-project
@@ -7,7 +10,16 @@ package pl.sdacademy.tarr2020java6.java.zaawansowana.wyjatki;
  **/
 public class Sklep {
 
-    /**
+    private List<String> listaProduktow;
+
+    public Sklep() {
+        listaProduktow = new ArrayList<String>();
+        listaProduktow.add("Coca cola");
+        listaProduktow.add("Warka");
+        listaProduktow.add("Ketchup Kotlin");
+        //....
+    }
+/**
      * Zadanie. Sprawdzanie na liście czy jest dany produkt
      * Jeśli nie ma to wyjątek że nie ma nia liście produktów
      */
@@ -18,7 +30,11 @@ public class Sklep {
      */
     public void poprosze(String produkt){
         if(produkt.isEmpty() || produkt.isBlank()){
-            throw new IllegalArgumentException("Nie mam takiego produktu o nazwie '"+produkt+"' !");
+            throw new IllegalArgumentException("Podaj nazwę produktu !");
+        }
+        // sprawdzenie na liscie produktow
+        if(!listaProduktow.contains(produkt)){
+            throw new RuntimeException("Brak produktu '"+produkt+"' !");
         }
         System.out.println("Otrzymałeś :"+produkt);
     }
