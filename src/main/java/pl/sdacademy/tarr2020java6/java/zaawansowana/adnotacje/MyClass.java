@@ -6,12 +6,16 @@ import javax.annotation.processing.SupportedAnnotationTypes;
  * @author : Jakub Olszewski [http://github.com/jakub-olszewski]
  * @project : tarr2019java4-tdd-project
  * @since : 21.05.2020
+ *
+ * Przyklad adnotacja na pole i metodę
  **/
 public class MyClass {
 
+    // ponizej adnotacja na pole
     @FieldAnnotation(name = "imie", author = "trener")
     public String name;
 
+    // ponizej adnotacja na metodę
     @MyAnnotation(A = "12.32.12.3", B = "administrator")
     public void method(){
         MyAnnotation annotationValues = null;

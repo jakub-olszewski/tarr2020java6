@@ -9,13 +9,16 @@ import java.lang.reflect.Method;
  * @project : tarr2019java4-tdd-project
  * @since : 21.05.2020
  **/
-public class Main {
+@JavaTopic(topic = "Przykład użycia adnotacji na pole i metodę", decription = "Java zaawansowana", createdBy = "Trener")
+public class Main extends MainClass {
 
+    public Main(){
+        super();
+    }
 
-    public static void main(String[] args) throws NoSuchMethodException, NoSuchFieldException {
-
+    @Override
+    protected void implementacjaProgramu() throws Exception {
         MyClass myClass = new MyClass();
-
 
         /**
          * Pobranie adnotacji z metody
@@ -32,6 +35,11 @@ public class Main {
         FieldAnnotation annotationField = fieldName.getAnnotation(FieldAnnotation.class);
         System.out.println(annotationField.author());
     }
+
+    public static void main(String[] args) throws Exception {
+        Main main = new Main();
+    }
+
 
 
 }
